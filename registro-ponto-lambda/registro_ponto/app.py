@@ -8,7 +8,9 @@ import pymysql
 putenv('TZ', 'America/Sao_Paulo')
 time.tzset()
 
-def lambda_handler(event, context):
+def lambda_handler(event, _):
+    connection = None
+
     try:
         user_id, datetime = get_register(event)
         connection = get_db_connection()

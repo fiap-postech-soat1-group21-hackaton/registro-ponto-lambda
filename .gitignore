@@ -4,6 +4,7 @@
 .build
 .aws-sam
 samconfig.toml
+.vscode
 
 # Ignorar arquivos de configuração local
 env.json
